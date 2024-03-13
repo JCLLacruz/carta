@@ -36,7 +36,7 @@ main {
 }
 
 li {
-    margin-left: 30px;
+    margin-left: 40px;
 }
 
 main p {
@@ -46,6 +46,7 @@ main p {
     hyphens: auto;
     word-spacing: 5px;
     word-wrap: break-word;
+    text-indent: 2em;
 }
 
 address {
@@ -62,7 +63,7 @@ a:visited {
 }
 
 dt {
-    font-weight: bold;
+    font-weight: 800;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -78,10 +79,37 @@ dd q {
 .despedida {
     margin-top: 50px;
 }
- /* Con esto pongo mi firma a la derecha de arriba a abajo*/
+ /* Con esto pongo mi firma a la derecha de arriba a abajo y hago que se anime si paso por encima*/
 #firma {
     display: flex;
     position: absolute;
     right: 0;
     writing-mode: vertical-rl;
+    /* transition: right 5s;
+    transition-timing-function: ease; */
 }
+#firma:hover {
+    right: 300px;
+    rotate: -100grad;
+    font-size: 60px;
+    background-color: black;
+    color: white;
+}
+
+/*#firma:hover {
+    animation-name: firma;
+    animation-duration: 10s;
+}
+
+@keyframes firma {
+    0%{right: 10px; rotate: -10grad;font-size: 20px;}
+    20%{right: 40px; rotate: -20grad;font-size: 40px;}
+    30%{right: 70px; rotate: -30grad;font-size: 60px;}
+    40%{right: 100px; rotate: -40grad;font-size: 80px;}
+    50%{right: 130px; rotate: -50grad;font-size: 100px;}
+    60%{right: 200px; rotate: -60grad;font-size: 80px;}
+    70%{right: 250px; rotate: -70grad;font-size: 60px;}
+    80%{right: 300px; rotate: -80grad;font-size: 40px;}
+    90%{right: 300px; rotate: -90grad;font-size: 20px;}
+    100%{right: 300px; rotate: -100grad;font-size: 20px;}
+}*/
