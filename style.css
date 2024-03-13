@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Merienda", cursive;
+    font-optical-sizing: auto;
+}
+
+:root {
+    --azul: aqua;
+}
+
+.eleanor {
+    text-align: right;
+}
+
+.separation {
+    margin-bottom: 10px;
+}
+
+#re {
+    vertical-align: bottom;
+    font-size: 30px;
+}
+
+body {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    
+    width: 80%;
+}
+
+li {
+    margin-left: 30px;
+}
+
+main p {
+    line-height: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    hyphens: auto;
+    word-spacing: 5px;
+    word-wrap: break-word;
+}
+
+address {
+    word-spacing: 5px;
+}
+
+a {
+    font-weight: bold;
+    color: var(--azul);
+}
+
+a:visited {
+    color: var(--azul);
+}
+
+dt {
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+dd q {
+    margin-left: 30px;
+}
+
+.quotes {
+    quotes: "^" "^";
+}
+
+.despedida {
+    margin-top: 50px;
+}
+ /* Con esto pongo mi firma a la derecha de arriba a abajo*/
+#firma {
+    display: flex;
+    position: absolute;
+    right: 0;
+    writing-mode: vertical-rl;
+}
