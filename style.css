@@ -92,8 +92,8 @@ dd q {
     right: 300px;
     rotate: -100grad;
     font-size: 60px;
-    background-color: black;
-    color: white;
+    background-color: grey;
+    color: black;
 }
 
 /*#firma:hover {
